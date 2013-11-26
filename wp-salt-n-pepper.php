@@ -5,7 +5,7 @@ Plugin Name: WP Salt and Pepper
 Plugin URI: http://www.timnash.co.uk/salt-n-pepper/
 Git URI: https://github.com/timnashcouk/wp-salt-n-pepper
 Description: Adds user specific salts and versioning for salts
-Version: 1.0
+Version: 1.0.1
 Author: Tim Nash
 Author URI: http://www.timnash.co.uk
 License: GPL version 2 or later - http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
@@ -27,6 +27,11 @@ Provides: wp-salt-n-pepper
     along with this program; if not, write to the Free Software
     Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 */
+
+// Dont call the file directly
+if ( ! defined( 'WPINC' ) ) {
+        die;
+}
 
 if ( !function_exists('wp_set_password') ) :
 /**

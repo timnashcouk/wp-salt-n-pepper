@@ -38,3 +38,7 @@ When the users has a unique salt generated the version used is also stored with 
 
 ###Why did you write it then?
 For a specific site who's security requirements required both salt and pepper by their auditors.
+
+#Changelog
+- 1.0.1 - Added blank inde.php and prevent plugin called directly
+- 1.0.0 - Initial Commit
